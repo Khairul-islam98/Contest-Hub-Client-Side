@@ -127,14 +127,14 @@ const Navbar = () => {
                                                 className="block px-4 py-2 text-gray-700"
                                             >
                                                 {
-                                                    user ? <h2 className='text-2xl'> {user && <span> {user?.displayName} </span>}</h2> :
+                                                    user ? <p className='text-2xl'> {user && <span> {user?.displayName} </span>}</p> :
                                                         ''
                                                 }
 
                                             </p>
                                         </li>
                                         <li>
-                                            {role === 'user' && <Link to='/dashboard/myParticipatedContest'>
+                                            {role === 'user'  && <Link to='/dashboard/myParticipatedContest'>
                                                 <button className='bg-rose-500 w-full rounded-md py-3 text-white mb-2'>Dashboard</button>
                                             </Link>}
                                             {role === 'creator' && <Link to='/dashboard/addContest'>

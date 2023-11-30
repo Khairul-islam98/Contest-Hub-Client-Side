@@ -1,4 +1,3 @@
-// Leaderboard.js - Leaderboard Component using Material-UI
 import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {
@@ -47,7 +46,7 @@ const Leaderboard = () => {
           <TableHead>
             <TableRow>
               <TableCell>Username</TableCell>
-              <TableCell align="right">Score</TableCell>
+              <TableCell align="right">Created Contest</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

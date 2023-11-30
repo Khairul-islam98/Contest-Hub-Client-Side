@@ -1,0 +1,48 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.progress-bar-container {
+    margin-top: 20px;
+}
+
+.progress-bar {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.bar {
+    width: 70%;
+    background-color: #f0f0f0;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.fill {
+    height: 100%;
+    background-color: #FB7185;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.contest-name {
+    flex: 1;
+}
+
+.participant-count {
+    margin-left: 10px;
+}
+
+.total-count {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}

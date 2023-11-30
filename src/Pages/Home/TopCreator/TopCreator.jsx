@@ -42,10 +42,10 @@ const TopCreator = () => {
         autoPlaySpeed={3000}
         arrows={true}
         className=' justify-center'
-        removeArrowOnDeviceType={['tablet', 'mobile', 'desktop' ]}
+        removeArrowOnDeviceType={['tablet', 'mobile']}
       >
         {topCreators.map((creator, index) => (
-          <div key={index} className="bg-white p-6 rounded-lg shadow-md lg:h-[360px] ml-10 " data-aos="fade-down-right">
+          <div key={index} className="bg-white p-6 rounded-lg shadow-md lg:h-[360px] ml-10 ">
             <img src={creator.creatorImage} alt="Creator" className="w-32 h-32 rounded-full mb-4 mx-auto" />
             <h3 className="text-xl font-bold mb-2 text-center">{creator.creatorName}</h3>
             <h4 className="text-lg text-gray-600 mb-2 text-center">{creator.contestName}</h4>

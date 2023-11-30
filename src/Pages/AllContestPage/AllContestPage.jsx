@@ -16,10 +16,9 @@ const AllContestPage = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5001/contestsCount')
+        fetch('https://contest-hub-server-kappa.vercel.app/contestsCount')
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 setCount(data.count)
             })
     }, [])
@@ -93,6 +92,13 @@ const AllContestPage = () => {
                     onClick={() => setSelectedCategory('Article Writing')}
                 >
                     Article Writing
+                    
+                </button>
+                <button
+                    className={`px-4 py-2 mr-4 border rounded-lg focus:outline-none text-rose-400 ${selectedCategory === 'Gaming' ? 'bg-gray-200' : ''}`}
+                    onClick={() => setSelectedCategory('Gaming')}
+                >
+                    Gaming
                 </button>
             </div>
 

@@ -49,7 +49,7 @@ const Registration = () => {
                 <div className='flex justify-center items-center min-h-screen'>
                     <div className='flex flex-col max-w-md p-6 rounded-md sm:p-10 text-gray-900'>
                         <div className='mb-8 text-center'>
-                            <h1 className='my-3 text-4xl font-bold'>Registration</h1>
+                            <h1 className='my-3 text-2xl font-bold'>Registration</h1>
                             <p className='text-xl font-semibold text-gray-400'>Welcome to Contest <span className='text-rose-500'>Hub</span> </p>
                         </div>
                         <form
@@ -68,7 +68,7 @@ const Registration = () => {
                                         name='name'
                                         {...register("name", { required: true })}
                                         id='name'
-                                        placeholder='Enter Your Name Here'
+                                        placeholder='Name'
                                         className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-rose-500 bg-gray-200 text-gray-900'
                                         data-temp-mail-org='0'
 
@@ -84,6 +84,7 @@ const Registration = () => {
                                         type='file'
                                         id='image'
                                         name='image'
+                                        className='w-full'
                                         {...register('image', { required: true })}
                                     />
                                 </div>
@@ -97,7 +98,7 @@ const Registration = () => {
                                         {...register("email", { required: true })}
                                         id='email'
                                         required
-                                        placeholder='Enter Your Email Here'
+                                        placeholder='Email'
                                         className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-rose-500 bg-gray-200 text-gray-900'
                                         data-temp-mail-org='0'
                                     />
@@ -148,14 +149,13 @@ const Registration = () => {
                         </div>
 
                         <p className='px-6 text-sm text-center text-gray-400'>
-                            Already have an account?{' '}
+                            Already have an account?
                             <Link
                                 to='/login'
                                 className='hover:underline hover:text-rose-500 text-gray-600'
                             >
                                 Login
                             </Link>
-                            .
                         </p>
                     </div>
                 </div>

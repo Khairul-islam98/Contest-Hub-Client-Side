@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaUtensils, FaLuggageCart } from 'react-icons/fa'
+import { FaUtensils, FaLuggageCart, FaAdn } from 'react-icons/fa'
 import { MdOutlineSendToMobile } from "react-icons/md";
 
 const CreatorMenu = () => {
@@ -14,7 +14,7 @@ const CreatorMenu = () => {
                 }`
             }
         >
-            <p className=''><FaUtensils /></p>
+            <p className=''><FaAdn /></p>
             <span className='mx-4 font-bold'>Add Contest</span>
         </NavLink>
         <NavLink

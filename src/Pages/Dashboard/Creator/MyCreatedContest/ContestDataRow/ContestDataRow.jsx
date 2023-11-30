@@ -43,7 +43,7 @@ const ContestDataRow = ({ contest, refetch }) => {
             </td>
             <td className='px-5 py-5 border-b border-gray-200 bg-white text-sm'>
                 <p className='text-gray-900 whitespace-no-wrap'>
-                    <p className='text-gray-900 whitespace-no-wrap'>${contest?.price}</p>
+                    <p className='text-gray-900 whitespace-no-wrap'>${contest?.prizeMoney}</p>
                 </p>
             </td>
             <td className='px-5 py-5 border-b border-gray-200 bg-white text-sm'>

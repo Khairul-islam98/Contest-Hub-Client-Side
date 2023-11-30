@@ -16,7 +16,7 @@ const MyParticipatedContest = () => {
         setLoading(true)
         getUserContest(user?.email)
             .then(data => {
-                console.log(data);
+            
                 setContests(data);
                 setSortedContests(data);
                 setLoading(false)
@@ -25,7 +25,7 @@ const MyParticipatedContest = () => {
 
         getAllApprovedContest()
             .then(data => {
-                console.log(data);
+                
             })
 
     }, [])
@@ -46,7 +46,6 @@ const MyParticipatedContest = () => {
     return (
 
         <div className="container mx-auto px-4 py-8">
-            <h2 className="text-2xl font-bold mb-4">Upcoming Contests</h2>
             <button
                 onClick={sortContestsByDeadline}
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4"

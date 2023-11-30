@@ -14,7 +14,7 @@ export const saveUser = async user => {
 
   export const getToken = async email => {
     const { data } = await axiosSecure.post(`/jwt`, { email })
-    console.log('Token received from server', data)
+    console.log(data)
     return data
   }
   

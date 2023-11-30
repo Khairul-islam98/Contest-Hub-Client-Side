@@ -17,8 +17,6 @@ const ContestSubmittedPage = () => {
         queryFn: async () => await submitedContest(user?.email),
     })
 
-    console.log(contests);
-
     if (isLoading) return <Loader />
 
 

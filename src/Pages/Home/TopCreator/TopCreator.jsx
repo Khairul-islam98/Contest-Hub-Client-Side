@@ -8,7 +8,7 @@ const TopCreator = () => {
 
   useEffect(() => {
     // Fetch data from the backend API
-    axios.get('http://localhost:5001/top-creators-details')
+    axios.get('https://contest-hub-server-kappa.vercel.app/top-creators-details')
       .then(response => {
         setTopCreators(response.data);
       })

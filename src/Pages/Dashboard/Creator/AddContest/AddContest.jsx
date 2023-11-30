@@ -52,7 +52,6 @@ const AddContest = () => {
     
         try {
           const data = await createdPost(contestData)
-          console.log(data)
           setUploadButtonText('Uploaded!')
           toast.success('Contest Added!')
         } catch (err) {

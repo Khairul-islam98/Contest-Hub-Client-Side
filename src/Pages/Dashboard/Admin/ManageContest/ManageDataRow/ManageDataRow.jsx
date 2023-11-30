@@ -15,10 +15,8 @@ const ManageDataRow = ({ contest, refetch }) => {
         setIsOpen(false)
     }
     const modalHandler = id => {
-        console.log(id)
         deleteContest(id)
             .then(data => {
-                console.log(data)
                 refetch()
                 toast.success('contest deleted')
             })

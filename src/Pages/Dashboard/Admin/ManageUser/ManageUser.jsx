@@ -9,7 +9,6 @@ const ManageUser = () => {
         queryKey: ['users'],
         queryFn: async () => await getAllUsers(),
       })
-      console.log(users)
     return (
         <>
       <div className='container mx-auto px-4 sm:px-8'>

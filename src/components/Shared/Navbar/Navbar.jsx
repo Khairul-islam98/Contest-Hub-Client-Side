@@ -47,6 +47,14 @@ const Navbar = () => {
         >
             All Contest
         </NavLink></li>
+        <li><NavLink
+            to="/leaderboard"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-rose-500  btn-primary font-bold underline" : ""
+            }
+        >
+            Leaderboard
+        </NavLink></li>
     </>
 
     return (

@@ -2,7 +2,7 @@ import axios from 'axios'
 import { clearCookie } from '../api/auth'
 
 const axiosSecure = axios.create({
-  baseURL: 'http://localhost:5001',
+  baseURL: 'https://contest-hub-server-kappa.vercel.app',
   withCredentials: true,
 })
 

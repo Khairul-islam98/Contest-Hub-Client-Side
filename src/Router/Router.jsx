@@ -19,6 +19,7 @@ import MyParticipatedContest from "../Pages/Dashboard/Users/MyParticipatedContes
 import PrivateRoute from "./PrivateRoute";
 import MyWinningContest from "../Pages/Dashboard/Users/MyWinningContest/MyWinningContest";
 import MyProfile from "../Pages/Dashboard/Users/MyProfile/MyProfile";
+import Leaderboard from "../Pages/Leaderboard/Leaderboard";
 
 
 
@@ -48,6 +49,10 @@ export const router = createBrowserRouter([
                 path:'/contest-details/:id',
                 element: <PrivateRoute><ContestDetails /></PrivateRoute>,
                 loader: ({ params }) => getSingleContest(params.id)
+            },
+            {
+                path: '/leaderboard',
+                element: <Leaderboard />
             }
            
             

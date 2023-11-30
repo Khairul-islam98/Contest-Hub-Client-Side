@@ -127,7 +127,6 @@ const Login = () => {
                             >
                                 Registration
                             </Link>
-                            .
                         </p>
                     </div>
                 </div>

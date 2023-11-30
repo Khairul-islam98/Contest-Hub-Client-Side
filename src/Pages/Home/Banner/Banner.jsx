@@ -8,7 +8,7 @@ const Banner = ({contestData, setContestData}) => {
   const handleSearch = (e) => {
     e.preventDefault();
     const searchValue = e.target.search.value;
-    fetch(`http://localhost:5001/contests/search?searchTerm=${searchValue}`)
+    fetch(`https://contest-hub-server-kappa.vercel.app/contests/search?searchTerm=${searchValue}`)
       .then((res) => res.json())
       .then((data) => {
         setContestData(data);

@@ -10,15 +10,12 @@ const MyWinningContest = () => {
     useEffect(() => {
         getUserWinContest(user?.email)
             .then((data) => {
-                console.log(data);
                 setWinningContests(data);
             })
             .catch((error) => {
                 console.error('Error fetching winning contests:', error);
             });
     }, []);
-
-    console.log(winningContests);
 
     return (
         <div className="container mx-auto px-4 py-8">
